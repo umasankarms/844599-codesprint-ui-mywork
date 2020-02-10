@@ -1,0 +1,222 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+  .sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:black;
+   color: aqua;
+
+   
+}
+input, label {
+  margin: 5px 5px;
+}
+
+.form-group {
+  margin: 30px auto;
+  width: 450px;
+}
+
+.form-control {
+  float: left;
+}
+
+#inputStreet {
+  width: 100%;
+}
+
+#inputCity {
+  width: 50%;
+}
+
+#inputState {
+  width: 15%;
+}
+
+#inputZip {
+  width: 28%;
+}
+
+#inputCounty {
+  width: 45%;
+}
+
+#inputCountry {
+  width: 50%;
+}
+
+
+
+</style>
+</head>
+<body background="https://lh6.googleusercontent.com/proxy/3akeCy6a7aAmMdWaHg4qbHo-DdHhmE7PTvd3rLu6jQwOo3xDEl8TQwIQba_fIssCrSgKIW8DM9lLp4RiRO2DzkVxOEUOGJ44zOGU">
+ 
+
+
+<nav class="navbar navbar-expand bg-dark">
+ <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="myhome.html">Home</a>
+  <a href="PROJECT.html">PlaceAppointment</a>
+  <a href="appoint.html">ViewAppointment</a>
+  <a href="contact.html">ContactUs</a>
+</div>
+<br/>
+     <div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>
+
+    
+</div>      
+               <img src="logo.jpg" class="img-circle" alt="logo"
+width=5%" height="50px">
+
+   <a class="navbar-brand" href="front.html" data-activates="slide-out"></a>
+
+
+</span></a>
+ </div>
+<div class="navbar-header">
+
+
+
+  
+     <ul class="navbar-nav">
+    <!-- <img src="C:\Users\HI\Desktop" alt=LOGO width="10px" height="10px align-left"> -->
+    <li class="nav-item">
+      <a class="nav-link" href="myhome.html">HOME</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="PROJECT.HTML">PLACE APPOINTMENT</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="appoint.html">VIEW APPOINTMENT</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contact.html">CONTACT US</a>
+    </li>
+  </ul>
+
+</nav>
+
+
+
+
+<div class="container">
+<div class="jumbotron">
+   
+        <h2 class="text-center" style="color:blue">WELCOME TO FITNESS</h2></br></br>
+          <p class="text-center" style="color:aqua"><b>This website will help every individual to stay physically as well as mentally fit </b></p> 
+
+ 
+     
+</div>
+</div>
+
+
+<br/>
+<br/>
+<!-- <div class="container">
+ <center> <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX11772242.jpg" width="111%" height="600px"></center>
+   
+  <div class="container" align="margin-bottom"> -->
+<center>
+ <span> <a href="PROJECT.html" button type="button"  class="btn btn-danger" style="width:30%;height:50px"><b>APPLY FOR TRAINER</b></button></center></a></span>
+
+  </div>
+  </div>
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+
+
+
+
+</body>
+</html>
+
